@@ -25,9 +25,11 @@ class PatientRecord:
             current_node = self.head
             while current_node.right:
                 current_node = current_node.right
+            current_node.right = new_node
             new_node.left = current_node
             new_node.right = None
-        print("Successfully Registered The Patient: " + new_node.name + "(" + new_node.PatId + ")")
+        print("Successfully Registered The Patient - " + new_node.name + "(" + new_node.PatId + ")")
+        return new_node
     # END - Register Patient
 
     def nextPatient(self):
@@ -35,6 +37,10 @@ class PatientRecord:
 
     def _dequeuePatient(self, PatId):
         print("DeQueue Patient")
+
+    @staticmethod
+    def sort_queue(patients):
+        return patients
 
 
 
