@@ -1,21 +1,21 @@
 import AppConstants
 import PatientRecord
-import AppUtils
 from PatientRecord import PatientRecord
 
 if __name__ == '__main__':
-    print("App Started\n")
+    print("\n\nDoctor Consultation App Started")
+    print('_________________________________')
 
     patients = []
     current_patients = []
     next_patients = []
 
     """
-        Read Current Patient File & Creating PatientRecord Object
+        Read File, Load Current Patients Record & Create PatientRecord Object
     """
     currentPatientFile = open(AppConstants.CURRENT_PATIENT_FILE_NAME, "r")
-    print('Reading Content From File: ' + AppConstants.CURRENT_PATIENT_FILE_NAME)
-    print('--------------------------------------------------------------------')
+    print('\n\n1A. Reading Current Patients From File: \'' + AppConstants.CURRENT_PATIENT_FILE_NAME + '\'')
+    print('=============================================================================')
     for patientRow in currentPatientFile:
         patientData = patientRow.rstrip().split(",")
         patient = {
@@ -30,32 +30,33 @@ if __name__ == '__main__':
     """
        Sort Current Patients Based On The Age In Descending Order
     """
-    print('\nAfter Sorting Patients By Age In Descending Order:')
-    print('--------------------------------------------------------------------')
-    current_patients = PatientRecord.sort_queue(current_patients)
-    for item in current_patients:
-        print(item.name)
+    current_patients = patientRecord.sort_queue(current_patients)
 
     """
        Write To outputPS5.txt with Refreshed Patient Queue
     """
-    print('\nAfter Patient Sorting Writing To File')
-    print('--------------------------------------------------------------------')
+    print('\n\n1B. After Patient Sorting, Writing To File: \'' + AppConstants.CURRENT_PATIENT_OUTPUT_FILE_NAME + '\'')
+    print('=============================================================================')
     current_patient_output_file = open(AppConstants.CURRENT_PATIENT_OUTPUT_FILE_NAME, "w")
-    file_content = "-----Initial Queue--------\nNo of patients added: " + str(len(current_patients))\
-                   + "\nRefreshed Queue:\n"
-    current_patient_output_file.writelines(file_content)
+    file_content = "\t--------- Initial Queue ---------\n" \
+                   + "\tNo of patients added: " + str(len(current_patients)) + "\n" \
+                   + "\tRefreshed Queue:\n"
     for item in current_patients:
-        print("Writing Record - " + item.name)
-        current_patient_output_file.writelines(item.PatId + ', ' + item.name + '\n')
+        file_content = file_content + "\t" + item.PatId + ', ' + item.name + '\n'
+    file_content = file_content + "\t----------------------------------"
+    print(file_content)
+    current_patient_output_file.writelines(file_content)
     current_patient_output_file.close()
 
     """
-        Read Next Patient File & Creating PatientRecord Object
+        Read File, Load New Patients Record & Create PatientRecord Object
     """
     nextPatientFile = open(AppConstants.NEW_PATIENT_FILE_NAME, "r")
-    print('\nReading Content From File:' + AppConstants.NEW_PATIENT_FILE_NAME)
-    print('--------------------------------------------------------------------')
+    all_patients_output_file = open(AppConstants.ALL_PATIENT_OUTPUT_FILE_NAME, "w+")
+    all_patients_output_file.writelines('')
+    all_patients_output_file = open(AppConstants.ALL_PATIENT_OUTPUT_FILE_NAME, "a")
+    print('\n\n1C. Reading New Patients From File: \'' + AppConstants.NEW_PATIENT_FILE_NAME + '\'')
+    print('=============================================================================')
     for patientRow in nextPatientFile:
         if "newPatient:" in patientRow and "," in patientRow:
             validPatientData = patientRow.rstrip().split(":")
@@ -66,10 +67,23 @@ if __name__ == '__main__':
             }
             patientRecord = PatientRecord(patient["name"], patient["age"], '')  # type: PatientRecord
             next_patient = patientRecord.registerPatient(patientRecord.name, patientRecord.age)
+            file_content = "\n\t--------- new patient entered ---------\n" \
+                           + "\tPatient details: " \
+                           + next_patient.name + ", " + next_patient.age + ", " + next_patient.PatId + "\n" \
+                           + "\tRefreshed Queue:\n"
             next_patients.append(next_patient)
-            patients = current_patients + next_patients
-            AppUtils.AppUtils.write_output_file(patients, next_patient)
-    nextPatientFile.close()
+            all_patients = current_patients + next_patients
+            all_patients = patientRecord.enqueuePatient(next_patient.PatId)
+            all_patients = patientRecord.sort_queue(all_patients)
+            for patient_item in all_patients:
+                file_content = file_content + "\t" + patient_item.PatId + ', ' + patient_item.name + '\n'
+            file_content = file_content + "\t----------------------------------------\n"
+            print(file_content)
+            """
+                Write File, Update New Patients With Queue Priority
+            """
+            all_patients_output_file.writelines(file_content)
+    all_patients_output_file.close()
 
 
 
