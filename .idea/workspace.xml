@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32cfc4cb-2fd9-473d-92f7-df19d1707aea" name="Doctor Consultation - DSAD Assignment" comment="Writing current patient &amp; next patients">
-      <change afterPath="$PROJECT_DIR$/DoublyLinkedList.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analysisPS5.text" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.py" beforeDir="false" afterPath="$PROJECT_DIR$/App.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppConstants.py" beforeDir="false" afterPath="$PROJECT_DIR$/AppConstants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PatientRecord.py" beforeDir="false" afterPath="$PROJECT_DIR$/PatientRecord.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outputPS5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/outputPS5.txt" afterDir="false" />
     </list>
     <list id="97a9fe77-5f9e-486f-a089-b7066c0accb1" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PatientRecord.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
+            <state relative-caret-position="743">
+              <caret line="66" column="48" lean-forward="true" selection-start-line="66" selection-start-column="48" selection-end-line="66" selection-end-column="48" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -91,8 +85,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="274" />
-    <option name="y" value="-1088" />
+    <option name="x" value="186" />
+    <option name="y" value="346" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -191,7 +185,7 @@
       <workItem from="1562904338681" duration="1741000" />
       <workItem from="1562948045046" duration="6989000" />
       <workItem from="1562963262066" duration="15545000" />
-      <workItem from="1563024239644" duration="812000" />
+      <workItem from="1563024239644" duration="1172000" />
     </task>
     <task id="LOCAL-00001" summary="- Reading current patients&#10;- Reading next patients&#10;- created pushing to doubly linked list">
       <created>1562904921620</created>
@@ -207,17 +201,24 @@
       <option name="project" value="LOCAL" />
       <updated>1562964950556</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Writing current patient &amp; next patients">
+      <created>1563025234564</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1563025234564</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25087000" />
+    <option name="totallyTimeSpent" value="25447000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="274" y="-1088" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.123667374" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12739871" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
@@ -231,13 +232,13 @@
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="10" />
-      <window_info anchor="right" id="Version Control" order="0" weight="0.26012793" />
+      <window_info active="true" anchor="right" id="Version Control" order="0" visible="true" weight="0.26012793" />
       <window_info anchor="right" id="SciView" order="1" />
       <window_info anchor="right" id="Database" order="2" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="3" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="4" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="5" weight="0.25" />
-      <window_info anchor="right" id="Run" order="6" visible="true" weight="0.32569295" />
+      <window_info anchor="right" id="Run" order="6" weight="0.32569295" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -341,8 +342,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PatientRecord.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
+        <state relative-caret-position="743">
+          <caret line="66" column="48" lean-forward="true" selection-start-line="66" selection-start-column="48" selection-end-line="66" selection-end-column="48" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
