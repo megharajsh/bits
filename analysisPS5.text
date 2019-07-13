@@ -1,5 +1,5 @@
 
-If an linked list has n elements, maximum nodes at a height h is = 1 = n/2^h ~ n/2^h. at every level, we are maxheapifyingdown which has complexity of 
+If an linked list has n elements, maximum nodes at a height h is => 1 + n/2^h ~ n/2^h. at every level, we are maxheapifyingdown which has complexity of 
 h for each node. Therefore, total time complexity of one level is h* number of nodes at that level. Time complexity of one level = h * (n/2^h)
 Total levels for N nodes are 1 to log N(base 2).
 
