@@ -1,23 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="32cfc4cb-2fd9-473d-92f7-df19d1707aea" name="Doctor Consultation - DSAD Assignment" comment="Writing current patient &amp; next patients">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sem1/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sem1/doctor-consultation-python/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Git.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Git.iml" afterDir="false" />
+    <list default="true" id="32cfc4cb-2fd9-473d-92f7-df19d1707aea" name="Doctor Consultation - DSAD Assignment" comment="- Reading current patients&#10;- Reading next patients&#10;- created pushing to doubly linked list">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppConstants.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppUtils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment PS5_DoctorConsultation.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DoublyLinkedList.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PatientRecord.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/analysisPS5.text" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inputPS5a.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inputPS5b.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/outputPS5.txt" beforeDir="false" />
     </list>
     <list id="97a9fe77-5f9e-486f-a089-b7066c0accb1" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,7 +12,20 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sem1/doctor-consultation-python/Main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="17" lean-forward="true" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -80,6 +78,12 @@
               <item name="bits" type="462c0819:PsiDirectoryNode" />
               <item name="sem1" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="bits" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bits" type="462c0819:PsiDirectoryNode" />
+              <item name="sem1" type="462c0819:PsiDirectoryNode" />
+              <item name="doctor-consultation-python" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -103,6 +107,9 @@
     </option>
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/sem1/doctor-consultation-python" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\msh\Google Drive\1. MSH\6. Acadmic\Bits MTech\Git" />
     </key>
@@ -119,7 +126,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.Main">
     <configuration name="App" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Git" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -142,8 +149,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Git" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/bin/python2.7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sem1/doctor-consultation-python" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sem1/doctor-consultation-python/Main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Main" />
         <item itemvalue="Python.App" />
       </list>
     </recent_temporary>
@@ -163,7 +193,7 @@
       <workItem from="1562948045046" duration="6989000" />
       <workItem from="1562963262066" duration="15545000" />
       <workItem from="1563024239644" duration="1172000" />
-      <workItem from="1563603615143" duration="904000" />
+      <workItem from="1563603615143" duration="1284000" />
     </task>
     <task id="LOCAL-00001" summary="- Reading current patients&#10;- Reading next patients&#10;- created pushing to doubly linked list">
       <created>1562904921620</created>
@@ -186,16 +216,37 @@
       <option name="project" value="LOCAL" />
       <updated>1563025234564</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="- Reading current patients&#10;- Reading next patients&#10;- created pushing to doubly linked list">
+      <created>1563606299637</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1563606299637</updated>
+    </task>
+    <task id="LOCAL-00005" summary="- Reading current patients&#10;- Reading next patients&#10;- created pushing to doubly linked list">
+      <created>1563606323918</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1563606323918</updated>
+    </task>
+    <task id="LOCAL-00006" summary="- Reading current patients&#10;- Reading next patients&#10;- created pushing to doubly linked list">
+      <created>1563606441957</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1563606441957</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26351000" />
+    <option name="totallyTimeSpent" value="26731000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1920" height="1018" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12873931" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12873931" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
@@ -211,25 +262,26 @@
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="right" id="R Packages" />
       <window_info anchor="right" id="R Graphics" />
-      <window_info anchor="right" id="Version Control" order="0" visible="true" weight="0.2596154" />
+      <window_info active="true" anchor="right" id="Version Control" order="0" visible="true" weight="0.2596154" />
       <window_info anchor="right" id="SciView" order="1" />
       <window_info anchor="right" id="Database" order="2" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="3" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="4" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="5" weight="0.25" />
-      <window_info anchor="right" id="Run" order="6" weight="0.32569295" />
+      <window_info anchor="right" id="Run" order="6" weight="0.3253205" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="- Reading current patients&#10;- Reading next patients&#10;- created pushing to doubly linked list" />
     <MESSAGE value="Writing current patient &amp; next patients" />
-    <option name="LAST_COMMIT_MESSAGE" value="Writing current patient &amp; next patients" />
+    <MESSAGE value="- Reading current patients&#10;- Reading next patients&#10;- created pushing to doubly linked list" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Reading current patients&#10;- Reading next patients&#10;- created pushing to doubly linked list" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/bits$Main.coverage" NAME="Main Coverage Results" MODIFIED="1563606420025" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sem1/doctor-consultation-python" />
     <SUITE FILE_PATH="coverage/Git$App.coverage" NAME="App Coverage Results" MODIFIED="1563024559419" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
@@ -321,7 +373,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sem1/doctor-consultation-python/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-180">
+        <state relative-caret-position="105">
+          <caret line="7" column="17" lean-forward="true" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
